@@ -16,7 +16,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background-image:url("bg.jpg");
+    background-color:rgb(98,140,38);
     background-size:cover;
 }
 .game-box{
@@ -37,32 +37,43 @@ body{
     transform:scale(0.75);
     top:140px;
     left:-68px;
-    z-index:1;
+    z-index:2;
 }
 .holes {
     height: 250px;
     width: 400px;
     background-image: url("hole.png");
     background-size: cover;
-    position:relative;
+    position: relative;
+    
 }
 
-.holes::after {
-    content:"";
+.mole{
     height: 170px;
     width: 200px;
     background-image: url("mole.png");
     background-size: cover;
     position:absolute;
-    top:80px;
+    top:110px;
     left:100px;
-    transition:all 0.2s ease-in-out;
+    transform:scale(0.7);
+    transition:all 0.3s;
     opacity:0;
-    display:block;
+    z-index:1;
+    visibility:hidden;
 }
 
-.came{
-    top:20px;
+.holes.came .mole{
+    top:-50px;
     opacity:1;
-    display:block;
+    visibility:visible;
+}
+
+span{
+    font-size:2.5rem;
+    font-weight:bold;
+    position:absolute;
+    color:white;
+    top:2%;
+    left:40%;
 }
