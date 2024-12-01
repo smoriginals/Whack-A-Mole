@@ -1,0 +1,68 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-family:Verdana, Geneva, Tahoma, sans-serif,Arial;
+}
+body{
+    height:100vh;
+    width:100vw;
+}
+.container{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image:url("bg.jpg");
+    background-size:cover;
+}
+.game-box{
+    height:80%;
+    width:80%;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+.half-hole{
+    height: 147px;
+    width: 540px;
+    background-image: url("half.png");
+    background-size: cover;
+    position:absolute;
+    transform:scale(0.75);
+    top:140px;
+    left:-68px;
+    z-index:1;
+}
+.holes {
+    height: 250px;
+    width: 400px;
+    background-image: url("hole.png");
+    background-size: cover;
+    position:relative;
+}
+
+.holes::after {
+    content:"";
+    height: 170px;
+    width: 200px;
+    background-image: url("mole.png");
+    background-size: cover;
+    position:absolute;
+    top:80px;
+    left:100px;
+    transition:all 0.2s ease-in-out;
+    opacity:0;
+    display:block;
+}
+
+.came{
+    top:20px;
+    opacity:1;
+    display:block;
+}
