@@ -1,1 +1,1 @@
-[OPEN IN BROWSER](https://smos-github.github.io/Whack-A-Mole/)
+[OPEN IN BROWSER](https://smoriginals.github.io/Whack-A-Mole/)
